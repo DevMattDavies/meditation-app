@@ -10,16 +10,24 @@
 </head>
 
 <body>
-    <section id="audio-video">
-        <audio id="player">
-            <source src="audio/music-1.mp3" type="audio/mp3">
-        </audio>
+    <!-- Background video -->
+    <section id="background-video">
         <video class="background-video" playsinline autoplay muted loop>
             <source src="videos/video-1.mp4" type="video/mp4">
         </video>
-
     </section>
 
+    <!-- Content container -->
+    <section id="content-container">
+        <div id="timer-options">
+            <button type="button" class="timer-option-button" id="ten-minute-button">10 min</button>
+            <button type="button" class="timer-option-button" id="twenty-minute-button">20 min</button>
+            <button type="button" class="timer-option-button" id="thirty-minute-button">30 min</button>
+        </div>
+        <div id="countdown">
+            <h1>0:00</h1>
+        </div>
+    </section>
 
 
     <script src="index.js"></script>
