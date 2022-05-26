@@ -1,3 +1,8 @@
+:root {
+    --primary-color: #F24C4C;
+    --font: 'Roboto', sans-serif;
+}
+
 html {
     font-size: calc(60% + 0.8vmin);
     height: 100vh;
@@ -10,6 +15,7 @@ html {
     font-size: 1rem;
     margin: 0;
     padding: 0;
+    font-family: var(--font);
 }
 
 body {
@@ -41,14 +47,22 @@ body {
 }
 
 .timer-option-button {
-    opacity: 0.5;
     border-radius: 50%;
     min-height: 8rem;
     min-width: 8rem;
     margin: 0 3rem;
     background-color: transparent;
-    color: blue;
-    border-color: blue;
+    color: var(--primary-color);
+    border-color: rgba(242, 76, 76, 0.7);
+    border-style: solid;
+    border-width: 0.3rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.timer-option-button:focus {
+    background-color: var(--primary-color);
+    color: white;
 }
 
 #countdown {
@@ -58,7 +72,7 @@ body {
     transform: translate(-50%);
     height: 20rem;
     width: 20rem;
-    border-color: blue;
+    border-color: var(--primary-color);
     border-style: solid;
     border-width: 5px;
     border-radius: 50%;
@@ -70,4 +84,5 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 4rem;
+    color: var(--primary-color);
 }
