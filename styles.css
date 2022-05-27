@@ -43,6 +43,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    position: relative;
     /* justify-content: space-around; */
 
 }
@@ -97,4 +98,12 @@ body {
 #meditation-quote {
     text-align: center;
     margin-top: 20%;
+    max-width: 40vw;
+}
+
+#meditation-text {
+    color: var(--primary-color);
+    /* font-style: italic; */
+    font-size: 1.5rem;
+    font-family: 'Caveat', cursive;
 }
