@@ -14,7 +14,7 @@ async function getQuote() {
     return data;
 }
 
-getQuote().then((data) => console.log(data));
+getQuote();
 
 
 // Button event listeners
