@@ -89,6 +89,10 @@ body {
     font-size: 1rem;
 }
 
+.timer-option-button:hover {
+    cursor: pointer;
+}
+
 .timer-option-button:focus {
     background-color: var(--primary-color);
     color: white;
