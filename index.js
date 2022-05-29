@@ -18,10 +18,7 @@ getQuote();
 
 
 
-function clickFunc(event) {
-    console.log(event, 'click');
-    event.target.focus();
-}
+
 
 // Button event listeners
 const tenMinuteButton = document.getElementById('ten-minute-button');
@@ -33,7 +30,7 @@ tenMinuteButton.addEventListener('click', tenCountFunction = () => {
     if (typeof interval !== 'undefined') {
         stopCounter();
     }
-    clickFunc();
+    tenMinuteButton.style.backgroundColor = '#F24C4C';
     const timeInMinutes = 10;
     audio.play();
     const timeInSeconds = timeInMinutes * 60;
@@ -45,7 +42,7 @@ twentyMinuteButton.addEventListener('click', () => {
     if (typeof interval !== 'undefined') {
         stopCounter();
     }
-    clickFunc();
+    tenMinuteButton.style.backgroundColor = '#F24C4C';
     const timeInMinutes = 20;
     audio.play();
     const timeInSeconds = timeInMinutes * 60;
@@ -57,7 +54,7 @@ thirtyMinuteButton.addEventListener('click', () => {
     if (typeof interval !== 'undefined') {
         stopCounter();
     }
-    clickFunc();
+    tenMinuteButton.style.backgroundColor = '#F24C4C';
     const timeInMinutes = 30;
     audio.play();
     const timeInSeconds = timeInMinutes * 60;
