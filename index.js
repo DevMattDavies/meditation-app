@@ -17,7 +17,17 @@ async function getQuote() {
 getQuote();
 
 
+const buttons = document.querySelectorAll('.timer-option-button');
 
+buttons.addEventListener('focusin', (e) => {
+    e.target.style.backgroundColor = '#F24C4C';
+    e.target.style.color = '#ffffff';
+});
+
+buttons.addEventListener('focusout', (e) => {
+    e.target.style.backgroundColor = 'transparent';
+    e.target.style.color = '#F24C4C';
+});
 
 
 // Button event listeners
@@ -30,8 +40,8 @@ tenMinuteButton.addEventListener('click', tenCountFunction = () => {
     if (typeof interval !== 'undefined') {
         stopCounter();
     }
-    tenMinuteButton.style.backgroundColor = '#F24C4C';
-    tenMinuteButton.style.color = '#ffffff';
+    // tenMinuteButton.style.backgroundColor = '#F24C4C';
+    // tenMinuteButton.style.color = '#ffffff';
     const timeInMinutes = 10;
     audio.play();
     const timeInSeconds = timeInMinutes * 60;
@@ -43,8 +53,8 @@ twentyMinuteButton.addEventListener('click', () => {
     if (typeof interval !== 'undefined') {
         stopCounter();
     }
-    twentyMinuteButton.style.backgroundColor = '#F24C4C';
-    twentyMinuteButton.style.color = '#ffffff';
+    // twentyMinuteButton.style.backgroundColor = '#F24C4C';
+    // twentyMinuteButton.style.color = '#ffffff';
     const timeInMinutes = 20;
     audio.play();
     const timeInSeconds = timeInMinutes * 60;
@@ -56,8 +66,8 @@ thirtyMinuteButton.addEventListener('click', () => {
     if (typeof interval !== 'undefined') {
         stopCounter();
     }
-    thirtyMinuteButton.style.backgroundColor = '#F24C4C';
-    thirtyMinuteButton.style.color = '#ffffff';
+    // thirtyMinuteButton.style.backgroundColor = '#F24C4C';
+    // thirtyMinuteButton.style.color = '#ffffff';
     const timeInMinutes = 30;
     audio.play();
     const timeInSeconds = timeInMinutes * 60;
