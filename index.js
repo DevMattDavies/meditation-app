@@ -17,6 +17,11 @@ async function getQuote() {
 getQuote();
 
 
+function clickFunc(event) {
+    console.log(event, 'click');
+    event.target.focus();
+}
+
 // Button event listeners
 const tenMinuteButton = document.getElementById('ten-minute-button');
 const twentyMinuteButton = document.getElementById('twenty-minute-button');
