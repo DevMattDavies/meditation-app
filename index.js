@@ -31,6 +31,7 @@ tenMinuteButton.addEventListener('click', tenCountFunction = () => {
         stopCounter();
     }
     tenMinuteButton.style.backgroundColor = '#F24C4C';
+    tenMinuteButton.style.color = '#ffffff';
     const timeInMinutes = 10;
     audio.play();
     const timeInSeconds = timeInMinutes * 60;
@@ -42,7 +43,8 @@ twentyMinuteButton.addEventListener('click', () => {
     if (typeof interval !== 'undefined') {
         stopCounter();
     }
-    tenMinuteButton.style.backgroundColor = '#F24C4C';
+    twentyMinuteButton.style.backgroundColor = '#F24C4C';
+    twentyMinuteButton.style.color = '#ffffff';
     const timeInMinutes = 20;
     audio.play();
     const timeInSeconds = timeInMinutes * 60;
@@ -54,7 +56,8 @@ thirtyMinuteButton.addEventListener('click', () => {
     if (typeof interval !== 'undefined') {
         stopCounter();
     }
-    tenMinuteButton.style.backgroundColor = '#F24C4C';
+    thirtyMinuteButton.style.backgroundColor = '#F24C4C';
+    thirtyMinuteButton.style.color = '#ffffff';
     const timeInMinutes = 30;
     audio.play();
     const timeInSeconds = timeInMinutes * 60;
