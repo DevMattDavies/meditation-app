@@ -17,17 +17,6 @@ async function getQuote() {
 getQuote();
 
 
-const buttons = document.querySelectorAll('.timer-option-button');
-
-buttons.addEventListener('focusin', (e) => {
-    e.target.style.backgroundColor = '#F24C4C';
-    e.target.style.color = '#ffffff';
-});
-
-buttons.addEventListener('focusout', (e) => {
-    e.target.style.backgroundColor = 'transparent';
-    e.target.style.color = '#F24C4C';
-});
 
 
 // Button event listeners
@@ -40,6 +29,7 @@ tenMinuteButton.addEventListener('click', tenCountFunction = () => {
     if (typeof interval !== 'undefined') {
         stopCounter();
     }
+
     // tenMinuteButton.style.backgroundColor = '#F24C4C';
     // tenMinuteButton.style.color = '#ffffff';
     const timeInMinutes = 10;

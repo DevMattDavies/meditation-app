@@ -93,6 +93,10 @@ body {
     cursor: pointer;
 }
 
+.timer-option-button:focus {
+    background-color: var(--primary-color);
+    color: white;
+}
 
 #meditation-quote {
     text-align: center;
