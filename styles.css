@@ -93,7 +93,12 @@ body {
     cursor: pointer;
 }
 
-.timer-option-button:focus {
+/* .timer-option-button:focus {
+    background-color: var(--primary-color);
+    color: white;
+} */
+
+.timer-option-button-focus {
     background-color: var(--primary-color);
     color: white;
 }
